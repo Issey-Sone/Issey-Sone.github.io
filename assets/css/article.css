@@ -1,8 +1,16 @@
 body.article-body {
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0;
+}
+
+.article-wrapper {
+  width: 100%;
   padding: 60px 20px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .article-layout {
@@ -19,7 +27,7 @@ body.article-body {
   width: 255px;
   flex-shrink: 0;
   position: sticky;
-  top: 60px;
+  top: 72px;
   align-self: flex-start;
 }
 

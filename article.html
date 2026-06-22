@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Issey Sone</title>
   <link rel="stylesheet" href="/assets/css/style.css?v=2">
+  <link rel="stylesheet" href="/assets/css/nav.css?v=2">
   <link rel="stylesheet" href="/assets/css/article.css?v=2">
   <link href="https://fonts.cdnfonts.com/css/latin-modern-math" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
@@ -21,6 +22,26 @@
 </head>
 <body class="article-body">
 
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="/" class="nav-name">Issey Sone</a>
+      <ul class="nav-links">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#news">News</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+      <div class="nav-search">
+        <button class="search-toggle" aria-label="Search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="article-wrapper">
   <div class="article-layout">
 
     <!-- Sidebar: progress-bar TOC (hidden for project pages) -->
@@ -39,7 +60,10 @@
     </main>
 
   </div>
+  </div>
 
+  <script src="/assets/js/search-data.js"></script>
+  <script src="/assets/js/nav.js"></script>
   <script defer src="/assets/js/article.js"></script>
 </body>
 </html>
