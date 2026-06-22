@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issey Sone</title>
+  <link rel="stylesheet" href="/assets/css/style.css?v=2">
+  <link rel="stylesheet" href="/assets/css/nav.css?v=2">
+  <link rel="stylesheet" href="/assets/css/home.css?v=2">
+  <link href="https://fonts.cdnfonts.com/css/latin-modern-math" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+</head>
+<body class="home-body">
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="/" class="nav-name">Issey Sone</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+      <div class="nav-search">
+        <button class="search-toggle" aria-label="Search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+        <input class="search-input" type="text" placeholder="Search posts…" autocomplete="off">
+      </div>
+    </nav>
+  </header>
+
+  <main class="home-main">
+
+    <!-- Profile -->
+    <section class="profile" id="about">
+      <div class="photo-placeholder">
+        <img src="/frontimage.jpg" alt="Issey Sone" class="profile-photo">
+      </div>
+      <div class="profile-info">
+        <h1 class="profile-name">Issey Sone</h1>
+        <p class="profile-bio">
+          I am an incoming first-year master's student in the <a href="https://stat.uchicago.edu/">Statistics Department</a> at the <a href="https://www.uchicago.edu/">University of Chicago</a>. 
+          I am currently interested in Machine Learning theory, but I am a probabilist at heart. 
+        </p>
+        <p class="profile-bio">
+          Previously, I received my B.S. degree from the <a href="https://www.utoronto.ca/">University of Toronto</a>. 
+        </p>
+        <ul class="profile-links">
+          <li><a href="mailto:issey.sone@mail.utoronto.ca">Email</a></li>
+          <li><a href="/files/Issey_Sone_CV.pdf">CV</a></li>
+          <li><a href="https://github.com/issey-sone">GitHub</a></li>
+          <li><a href="https://linkedin.com">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="home-section" id="news">
+      <h2 class="section-heading">News</h2>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">[2026/06]</span>
+          Completed B.S. in Statistics at UofT.
+        </li>
+        <li>
+          <span class="news-date">[2026/02]</span>
+          Admitted to University of Chicago as a Master's student. 
+        </li>
+        <li>
+          <span class="news-date">[2025/08]</span>
+          Undergraduate talk @ Fields Institute on Large Deviations.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="home-section" id="projects">
+      <h2 class="section-heading">Projects</h2>
+      <ul class="project-list">
+        <li class="project-item">
+          <div class="project-body">
+            <a class="project-title" href="/article.html?project=semi-online">Bridging Offline and Online DPO Through On-Policy Data Mixing</a>
+            <p class="project-desc">
+              Course Project in UofT STAD68 Advanced Machine Learning and Data Mining, Winter 2026.
+            </p>
+            <div class="project-links">
+              <a href="/files/STAD68_Final_Report.pdf">[PDF]</a>
+              <a href="https://github.com/Issey-Sone/DPO-On-Policy-Final-Project">[code]</a>
+              <a href="/files/D68_final_presentation.pdf">[slides]</a>
+            </div>
+          </div>
+          <img class="project-thumb" src="/assets/images/D68.png" alt="" onerror="this.style.display='none'">
+        </li>
+        <li class="project-item">
+          <div class="project-body">
+            <a class="project-title" href="/article.html?project=stad37">STAD37 Methods of Multivariate Statistics Visualization Tools</a>
+            <p class="project-desc">
+              UofT Work Study Project under <a href="https://www.utsc.utoronto.ca/cms/shahriar-shams" class="accent-link">Prof. Shahriar Shams</a>, Summer 2025.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Issey-Sone/STAD37-Dashboards">[code]</a>
+              <a href="https://issey-sone.github.io/STAD37-Dashboards/">[link]</a>
+            </div>
+          </div>
+          <img class="project-thumb" src="/assets/images/D37.png" alt="" onerror="this.style.display='none'">
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <script src="/assets/js/nav.js"></script>
+</body>
+</html>
