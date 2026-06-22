@@ -1,8 +1,8 @@
----
+<!--
 pdf: /files/STAD68_Final_Report.pdf
 code: https://github.com/Issey-Sone/DPO-On-Policy-Final-Project
 slides: /files/D68_final_presentation.pdf
----
+-->
 # Bridging Offline and Online DPO Through On-Policy Data Mixing
 
 *Course Project in UofT STAD68 Advanced Machine Learning and Data Mining, Winter 2026*

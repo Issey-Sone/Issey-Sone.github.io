@@ -1,7 +1,7 @@
----
+<!--
 code: https://github.com/Issey-Sone/STAD37-Dashboards
 link: https://issey-sone.github.io/STAD37-Dashboards/
----
+-->
 # STAD37 Methods of Multivariate Statistics Visualization Tools
 
 *UofT Work Study Project under <a href="https://www.utsc.utoronto.ca/cms/shahriar-shams" class="accent-link">Prof. Shahriar Shams</a>, Summer 2025.*

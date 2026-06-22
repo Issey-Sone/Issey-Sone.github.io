@@ -105,10 +105,14 @@ function onScroll() {
   });
 }
 
-// Parse optional YAML-like frontmatter (--- key: value --- block at top).
-// Returns { meta: {key: value, ...}, body: markdownWithoutFrontmatter }
+// Parse optional metadata block at the top of the file. Supports a leading
+// HTML comment (<!-- key: value -->) — which GitHub Pages' Jekyll leaves alone
+// so the raw .md stays fetchable — as well as the classic --- YAML block.
+// Returns { meta: {key: value, ...}, body: markdownWithoutMeta }
 function parseFrontmatter(raw) {
-  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+  const match =
+    raw.match(/^<!--\r?\n([\s\S]*?)\r?\n-->\r?\n([\s\S]*)$/) ||
+    raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
   if (!match) return { meta: {}, body: raw };
   const meta = {};
   for (const line of match[1].split(/\r?\n/)) {
